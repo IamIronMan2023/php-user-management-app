@@ -17,7 +17,7 @@
 
     <?php if (isset($user)) : ?>
 
-        <p>Hello <?= $user["user_name"] ?></p>
+        <p>Hello <?= htmlspecialchars($user["user_name"]) ?></p>
 
         <p><a href="list_users.php">Manage</a> or <a href="logout.php">Log out</a> </p>
 
